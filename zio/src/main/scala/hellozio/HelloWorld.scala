@@ -1,7 +1,7 @@
 package hellozio
 
 import zio._
-import zio.console._
+import zio.Console._
 
 class R1
 class R2 // extends R1

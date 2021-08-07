@@ -6,7 +6,8 @@ object Main {
   case class Password(value: String)
 
   def main(args: Array[String]): Unit = {
-    println(s"Hello world! $msg")
+    val coco = s"$msg"
+    println(s"Hello world! $coco ")
     println(msg)
   }
 

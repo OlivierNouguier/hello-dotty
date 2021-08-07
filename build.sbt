@@ -1,4 +1,4 @@
-val latestScala3Version = "3.0.0"
+val latestScala3Version = "3.0.1"
 val latestScala3NightlyVersion = "3.0.1-RC1-bin-20210528-56abade-NIGHTLY"
 
 inThisBuild(
@@ -25,7 +25,7 @@ lazy val core = (project in file("core"))
 lazy val zio = (project in file("zio"))
   .settings(
     scalaVersion := "3.0.1",
-    libraryDependencies ++= Seq("zio", "zio-test", "zio-test-sbt").map("dev.zio" %% _ % "1.0.9"),
+    libraryDependencies ++= Seq("zio", "zio-test", "zio-test-sbt").map("dev.zio" %% _ % "2.0.0-M1"),
     testFrameworks += new TestFramework("zio.test.sbt.ZTestFramework")
 //    libraryDependencies += "org.scalameta" %% "scalameta" % "4.4.14"
   )
